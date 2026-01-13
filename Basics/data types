@@ -1,0 +1,24 @@
+public class dataTypes 
+{
+    public static void main(String args[])
+    {
+        int a = 26;
+        float b = 56.765f;
+        double k=45.6789;
+        char c = 'A';
+        String d = "Hello, Java!";
+        boolean e = true;
+
+        System.out.println("Integer: " + a);
+        System.out.println("Float: " + b);
+        System.out.println("Double: " + k);
+        System.out.println("Character: " + c);
+        System.out.println("String: " + d);
+        System.out.println("Boolean: " + e);
+    }
+}
+
+//  Literals are the actual values assigned to variables in a program. For example, in the statement 
+//  int a =5;(so here a is variable of integer data type and 5 is an interger literal assigned to it)
+//  It means that we are allocating a memory space to store integer value 5.
+//  A variale can store a literal itself but is never a literal.
