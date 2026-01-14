@@ -1,4 +1,4 @@
-package class_programs; // FIXED: Just the folder name + semicolon
+package class_programs; // Declares that this class is part of the 'class_programs' package
 
 public class reverse 
 {
