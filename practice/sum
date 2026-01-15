@@ -1,0 +1,19 @@
+public class sum 
+{
+    int a;
+    void cal(int a)
+    {
+        int sum=0;
+        while(a>0)
+        {
+            sum+=a%10;
+            a=a/10;
+        }
+        System.out.println(sum);
+    }
+    public static void main(String args[])
+    {
+        sum obj=new sum();
+        obj.cal(2026);
+    }
+}
