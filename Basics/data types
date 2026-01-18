@@ -19,6 +19,7 @@ public class dataTypes
 }
 
 
+
 //  Literals are the actual values assigned to variables in a program. For example, in the statement 
 //  int a =5;(so here a is variable of integer data type and 5 is an interger literal assigned to it)
 //  It means that we are allocating a memory space to store integer value 5.
