@@ -1,0 +1,26 @@
+public class WrapperExample 
+{
+    public static void main(String[] args) 
+{
+        // Autoboxing: primitive to wrapper
+        Integer num1 = 10; // int to Integer
+        Double num2 = 5.5; // double to Double
+ 
+        // Unboxing: wrapper to primitive
+        int num3 = num1; // Integer to int
+        double num4 = num2; // Double to double
+ 
+        // Utility methods
+        String str = "123";
+        int num5 = Integer.parseInt(str); // String to int
+        String str2 = Integer.toString(num5); // int to String
+ 
+        // Using in collections
+        ArrayList list = new ArrayList<>();
+        list.add(10); // Autoboxing
+        list.add(20);
+ 
+        System.out.println("List: " + list);
+        System.out.println("Parsed int: " + num5);
+    }
+}
