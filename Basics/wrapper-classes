@@ -1,0 +1,22 @@
+Wrapper class is a set of classes that allows us to use primitive data types as objects.
+
+Since Java is an object-oriented language, there are situations where you need to work with objects rather than primitives,such as when using collections
+(e.g., ArrayList, HashMap), which only work with objects.
+Wrapper classes allow you to convert primitives into objects and vice versa.
+
+Primitive Data Type	    Wrapper Class
+byte	                  Byte
+short                  	Short
+int                    	Integer
+long                  	Long
+float                  	Float
+double	                Double
+char	                  Character
+boolean                	Boolean
+
+
+Utility Methods:
+
+Wrapper classes provide utility methods for converting between primitives and strings, parsing strings, and performing other operations. For example:
+Integer.parseInt(String s)  //converts a string to an int.
+Integer.toString(int i)     //converts an int to a string
