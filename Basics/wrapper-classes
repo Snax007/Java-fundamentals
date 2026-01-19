@@ -4,6 +4,7 @@ Since Java is an object-oriented language, there are situations where you need t
 (e.g., ArrayList, HashMap), which only work with objects.
 Wrapper classes allow you to convert primitives into objects and vice versa.
 
+
 Primitive Data Type	    Wrapper Class
 byte	                  Byte
 short                  	Short
@@ -16,7 +17,13 @@ boolean                	Boolean
 
 
 Utility Methods:
-
 Wrapper classes provide utility methods for converting between primitives and strings, parsing strings, and performing other operations. For example:
 Integer.parseInt(String s)  //converts a string to an int.
 Integer.toString(int i)     //converts an int to a string
+
+
+Autoboxing: Automatic conversion of a primitive to its corresponding wrapper class object. For example:
+Integer num = 10; // Autoboxing: int to Integer
+
+Unboxing: Automatic conversion of a wrapper class object to its corresponding primitive. For example:
+int num = new Integer(10); // Unboxing: Integer to int
