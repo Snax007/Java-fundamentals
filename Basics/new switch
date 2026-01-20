@@ -21,7 +21,7 @@ String type = switch (day)
 
 
 
-Using (YEILD) keyword:-
+Using (YEILD) keyword:-It is for returning a value from new switch statement
 
 int marks = 85;
 String grade = switch (marks / 10) 
