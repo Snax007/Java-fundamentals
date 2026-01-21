@@ -1,7 +1,10 @@
 JVM is the execution engine - it runs Java bytecode, handles memory management through the heap, performs JIT compilation, and enables 'write once, run anywhere.'
-
 JRE is the runtime environment - it's the JVM plus core libraries (java.lang, java.util) that provide the minimum needed to run Java applications.
-
 JDK is the development toolkit - it includes the JRE plus development tools like javac (compiler), javadoc, debuggers, and profilers needed to create Java applications.
-
 So simply: JDK contains JRE, JRE contains JVM."
+
+
+JDK: Used by Developers. Contains javac.
+JRE: Used by Users. Contains libraries.
+JVM: The Engine. Handles memory, security, and execution.
+JIT: The reason Java is fast
