@@ -1,0 +1,23 @@
+class calculator
+{
+    public int add()
+    {
+        System.out.println("add method");
+        return 1;
+    }
+}
+
+public class referrence
+{
+    public static void main(String args[])
+    {
+        int a=10;
+        int b=20;
+        int result=a+b;
+
+        calculator calc;     //this is just the refernce variable for class calculator
+
+        calc.add();   //this will give error as we have not created object of class calculator
+
+    }
+}
