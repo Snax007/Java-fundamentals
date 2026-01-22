@@ -1,0 +1,3 @@
+In Java, we achieve encapsulation by:
+    Declaring the class variables as private.
+    Providing public getter and setter methods to allow controlled access to those variables
