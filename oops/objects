@@ -9,7 +9,7 @@ Significance: Provides type safety - obj can only reference computer objects
 
 2. obj
 
-This is the variable name or reference variable
+It is reference variable
 It's an identifier you choose to refer to your object
 Like a label or handle to access the object
 Significance: Without this name, you couldn't interact with the object you're creating
@@ -30,6 +30,5 @@ Significance: Without new, you'd just have a reference pointing to nothing (null
 5. computer() (second occurrence)
 
 This calls the constructor of the computer class
-The parentheses may contain arguments if the constructor accepts parameters
 Initializes the object's properties/state
 Significance: Sets up the initial state of your object
