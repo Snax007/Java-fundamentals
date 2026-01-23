@@ -1,0 +1,35 @@
+EXAMPLE:-
+computer obj = new computer();
+
+computer (first occurrence)
+
+This is the data type or class name
+Tells the compiler: "I'm creating a variable that will hold a computer object"
+Significance: Provides type safety - obj can only reference computer objects
+
+2. obj
+
+This is the variable name or reference variable
+It's an identifier you choose to refer to your object
+Like a label or handle to access the object
+Significance: Without this name, you couldn't interact with the object you're creating
+
+3. = (assignment operator)
+
+Assigns the newly created object to the variable obj
+Connects the reference variable on the left to the actual object on the right
+Significance: Links your variable name to the actual memory location of the object
+
+4. new
+
+A keyword that allocates memory for the object
+Creates an actual instance of the computer class in memory (on the heap)
+Calls the constructor to initialize the object
+Significance: Without new, you'd just have a reference pointing to nothing (null)
+
+5. computer() (second occurrence)
+
+This calls the constructor of the computer class
+The parentheses may contain arguments if the constructor accepts parameters
+Initializes the object's properties/state
+Significance: Sets up the initial state of your object
