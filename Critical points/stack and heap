@@ -1,0 +1,30 @@
+public class MemoryDemo {
+    // instanceVar - stored in HEAP (part of object)
+    private int instanceVar = 10;
+    
+    // staticVar - stored in HEAP (Method Area/PermGen/Metaspace)
+    private static int staticVar = 20;
+    
+    public void calculate() {
+        // localVar - stored in STACK
+        int localVar = 5;
+        
+        // objRef (reference) - stored in STACK
+        // Actual object - stored in HEAP
+        String message = new String("Hello");
+        
+        // recursive call can cause StackOverflowError
+        // calculate();
+    }
+    
+    public static void main(String[] args) {
+        // args reference - in STACK
+        // args array object - in HEAP
+        
+        MemoryDemo demo = new MemoryDemo(); // Object in HEAP
+        demo.calculate();
+        
+        // Large allocation can cause OutOfMemoryError
+        // int[] hugeArray = new int[Integer.MAX_VALUE];
+    }
+}
