@@ -1,0 +1,28 @@
+public class Employee {
+    // name reference in stack, String object in heap (string pool)
+    private String name = "John";
+    
+    // salary primitive - stored in heap (as part of Employee object)
+    private double salary = 50000;
+    
+    public void promote(double raise) {
+        // raise parameter - in stack
+        // oldSalary local variable - in stack
+        double oldSalary = this.salary;
+        
+        // Calculation happens in stack
+        this.salary = oldSalary + raise;
+        
+        // new Department object - in heap
+        // deptRef reference - in stack
+        Department dept = new Department("Engineering");
+    }
+}
+
+// When promote() is called:
+// 1. Stack frame created for promote()
+// 2. 'raise' parameter pushed to stack
+// 3. 'oldSalary' local variable in stack
+// 4. Department object created in heap
+// 5. Method ends → stack frame cleared
+// 6. Department object remains in heap until GC
