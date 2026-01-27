@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class FriendlyPair {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+
+        int sum1 = 0, sum2 = 0;
+
+        // sum of divisors of num1
+        for (int i = 1; i <= num1; i++) {
+            if (num1 % i == 0) {
+                sum1 = sum1 + i;
+            }
+        }
+
+        // sum of divisors of num2
+        for (int i = 1; i <= num2; i++) {
+            if (num2 % i == 0) {
+                sum2 = sum2 + i;
+            }
+        }
+
+        // check friendly pair
+        if ((sum1 / (double) num1) == (sum2 / (double) num2)) {
+            System.out.println("Friendly Pair");
+        } else {
+            System.out.println("Not Friendly Pair");
+        }
+    }
+}
