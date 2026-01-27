@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // check first number
+        if (!sc.hasNextDouble()) {
+            System.out.println("Error: Invalid numeric input.");
+            return;
+        }
+        Double num1 = sc.nextDouble();   // Wrapper class
+
+        // operator input
+        char operator = sc.next().charAt(0);
+
+        // check second number
+        if (!sc.hasNextDouble()) {
+            System.out.println("Error: Invalid numeric input.");
+            return;
+        }
+        Double num2 = sc.nextDouble();   // Wrapper class
+
+        Double result;
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+
+            case '-':
+                result = num1 - num2;
+                break;
+
+            case '*':
+                result = num1 * num2;
+                break;
+
+            case '/':
+                result = num1 / num2;
+                break;
+
+            default:
+                System.out.println("Invalid operator");
+                return;
+        }
+
+        System.out.println("Output: " + result);
+    }
+}
