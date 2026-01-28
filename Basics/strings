@@ -1,3 +1,19 @@
+The "Newline Pitfall" (Important)
+If you use nextInt() followed by nextLine(), the nextLine() often seems to be "skipped."
+This happens because nextInt() leaves the "Enter" character (newline) in the buffer.
+The Fix: Add an extra sc.nextLine() to "consume" that leftover newline.
+
+System.out.print("Enter age: ");
+int age = sc.nextInt(); 
+
+sc.nextLine(); // This consumes the leftover newline character
+
+System.out.print("Enter your favorite quote: ");
+String quote = sc.nextLine(); // Now this will wait for your input!
+
+
+
+
 Method,                            Description,                                  Example
 length(),                          Returns the number of characters.,            str.length();
 charAt(int i),                     Returns the character at a specific index.,   str.charAt(0);
