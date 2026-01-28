@@ -1,0 +1,7 @@
+Method,                            Description,                                  Example
+length(),                          Returns the number of characters.,            str.length();
+charAt(int i),                     Returns the character at a specific index.,   str.charAt(0);
+substring(int start, int end),     Extracts a portion of the string.,            str.substring(0, 5);
+toLowerCase() / toUpperCase(),     Changes the casing of the string.,            str.toLowerCase();
+equals(Object obj),                Compares the content of two strings.,         str1.equals(str2);
+contains(CharSequence s),          Checks if a sequence is present.,             str.contains(""Java"");
