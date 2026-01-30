@@ -1,0 +1,8 @@
+String s1 = "Java";
+s1.concat(" Programming"); // Attempting to append
+
+System.out.println(s1); // Output: "Java" (The original remains unchanged!)
+
+// To get the result, you must assign it to a new reference:
+s1 = s1.concat(" Programming");
+System.out.println(s1); // Output: "Java Programming"
