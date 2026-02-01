@@ -16,6 +16,7 @@ public class FriendlyPair {
             }
         }
 
+
         // sum of divisors of num2
         for (int i = 1; i <= num2; i++) {
             if (num2 % i == 0) {
