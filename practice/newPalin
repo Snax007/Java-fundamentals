@@ -1,0 +1,38 @@
+import java.util.*;
+
+public class palin
+{
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a paragraph:");
+        String paragraph = sc.nextLine();
+
+
+        String[] words = paragraph.split("[\\s,.;:!?]+");
+
+        int palindromeCount = 0;
+
+        System.out.println("\nPalindrome words found:");
+
+        for (String word : words) {
+
+            String cleaned = word.toLowerCase().replaceAll("[^a-z]", "");
+
+            if (cleaned.length() > 1) {
+
+                String reversed = new StringBuffer(cleaned).reverse().toString();
+
+                if (cleaned.equals(reversed)) {
+                    palindromeCount++;
+                    System.out.println(word);
+                }
+            }
+        }
+
+        System.out.println("\nTotal palindrome words found: " + palindromeCount);
+
+        sc.close();
+    }
+}
