@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class palin {
+
+    public static void main(String[] args) {
+
+        // 1. Input Text: Accept multi-word string
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the text:");
+        String text = sc.nextLine();
+
+        // 2. Word Tokenization: split using spaces and punctuation
+        String[] words = text.split("[\\s,.;:!?]+");
+
+        int totalWords = words.length;
+        int palindromeCount = 0;
+        String longestPalindrome = "";
+
+        System.out.println("\nPalindromic words found:");
+
+        // 3. Palindrome Check for each word
+        for (String word : words) {
+
+            // Clean the word: lowercase + remove non-alphabetic characters
+            String cleaned = word.toLowerCase().replaceAll("[^a-z]", "");
+
+            // Ignore empty or single-character words
+            if (cleaned.length() > 1) {
+
+                // Check palindrome using StringBuffer.reverse()
+                String reversed = new StringBuffer(cleaned).reverse().toString();
+
+                if (cleaned.equals(reversed)) {
+                    palindromeCount++;
+                    System.out.println(word);   // original word
+
+                    // Check for longest palindrome
+                    if (cleaned.length() > longestPalindrome.length()) {
+                        longestPalindrome = word;
+                    }
+                }
+            }
+        }
+
+        // Analysis and Output
+        System.out.println("\nTotal words processed: " + totalWords);
+        System.out.println("Total palindromes found: " + palindromeCount);
+
+        if (!longestPalindrome.isEmpty()) {
+            System.out.println("Longest palindrome found: " + longestPalindrome);
+        } else {
+            System.out.println("No palindromes found.");
+        }
+
+        sc.close();
+    }
+}
