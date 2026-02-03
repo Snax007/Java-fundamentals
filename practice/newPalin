@@ -8,12 +8,8 @@ public class palin
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a paragraph:");
         String paragraph = sc.nextLine();
-
-
         String[] words = paragraph.split("[\\s,.;:!?]+");
-
         int palindromeCount = 0;
-
         System.out.println("\nPalindrome words found:");
 
         for (String word : words) {
