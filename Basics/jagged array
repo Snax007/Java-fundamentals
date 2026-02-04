@@ -8,3 +8,6 @@ jaggedArray[2] = new int[3]; // Row 2 has 3 columns
 
 
 Jagged array is efficient when there is irregualr data
+
+A real life example of this, is our college timetable , where we have different amount of lectures on each day
+so information will be stored better in jagged array 
