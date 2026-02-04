@@ -5,3 +5,6 @@ int[][] jaggedArray = new int[3][];
 jaggedArray[0] = new int[2]; // Row 0 has 2 columns
 jaggedArray[1] = new int[5]; // Row 1 has 5 columns
 jaggedArray[2] = new int[3]; // Row 2 has 3 columns
+
+
+Jagged array is efficient when there is irregualr data
