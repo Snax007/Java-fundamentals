@@ -4,8 +4,14 @@ For example:-
 String line = "apple banana cherry";
 String[] fruits = line.split(" ");  // ["apple", "banana", "cherry"]
 
+
 for ultimate separation :-
 String text = "hello, world!java;python:go   rust";
 String[] words = text.split("[\\s,.;:!?]+");
 // Result: ["hello", "world", "java", "python", "go", "rust"]
 this separates on basis of every punctuations marks
+
+
+"word1,,,word2...word3   word4".split("[\\s,.;:!?]+")
+// ["word1", "word2", "word3", "word4"]
+// Note: Multiple delimiters treated as one split poin
