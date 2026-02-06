@@ -21,3 +21,21 @@ substring(int start, int end),     Extracts a portion of the string.,           
 toLowerCase() / toUpperCase(),     Changes the casing of the string.,            str.toLowerCase();
 equals(Object obj),                Compares the content of two strings.,         str1.equals(str2);
 contains(CharSequence s),          Checks if a sequence is present.,             str.contains(""Java"");
+
+
+
+
+// BAD WAY: Using String in a loop
+String s = "";
+for (int i = 0; i < 5; i++) {
+    s = s + i; // Creates 5 different string objects
+}
+
+// GOOD WAY: Using StringBuilder
+StringBuilder sb = new StringBuilder();
+for (int i = 0; i < 5; i++) {
+    sb.append(i); // Modifies the SAME object
+}
+
+String finalResult = sb.toString(); // Convert back to String when done
+System.out.println(finalResult); // "01234"
