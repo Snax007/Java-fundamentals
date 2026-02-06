@@ -3,3 +3,9 @@ If i want to break a paragraph entered by user, into substrings separated by spa
 For example:-
 String line = "apple banana cherry";
 String[] fruits = line.split(" ");  // ["apple", "banana", "cherry"]
+
+for ultimate separation :-
+String text = "hello, world!java;python:go   rust";
+String[] words = text.split("[\\s,.;:!?]+");
+// Result: ["hello", "world", "java", "python", "go", "rust"]
+this separates on basis of every punctuations marks
