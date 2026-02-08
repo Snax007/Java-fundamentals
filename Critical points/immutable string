@@ -8,3 +8,13 @@ s1 = s1.concat(" Programming");
 System.out.println(s1); // Output: "Java Programming"
 
 
+
+
+String s = "Hello";
+
+s.concat(" World");      // Returns new: "Hello World"
+s.toUpperCase();         // Returns new: "HELLO"
+s.toLowerCase();         // Returns new: "hello"
+s.trim();                // Returns new: "Hello" (no spaces)
+s.substring(1);          // Returns new: "ello"
+s.replace('H', 'J');     // Returns new: "Jello"
