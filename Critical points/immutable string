@@ -9,7 +9,6 @@ System.out.println(s1); // Output: "Java Programming"
 
 
 
-
 String s = "Hello";
 
 s.concat(" World");      // Returns new: "Hello World"
