@@ -1,0 +1,11 @@
+class Counter {
+    static int count = 0;  // ONE copy shared by all objects
+    
+    Counter() {
+        count++;  // Every object increments SAME variable
+    }
+}
+
+Counter c1 = new Counter();  // count = 1
+Counter c2 = new Counter();  // count = 2 (NOT reset to 0)
+Counter c3 = new Counter();  // count = 3
