@@ -1,4 +1,5 @@
-class Student {
+class Student 
+{
     String name;
     int age;
     
@@ -10,17 +11,20 @@ class Student {
 }
 
 
-class Rectangle {
+class Rectangle 
+{
     int length;
     int width;
     
     // Default constructor
-    Rectangle() {
+    Rectangle() 
+    {
         this(10, 20);  // Calls the parameterized constructor
     }
     
     // Parameterized constructor
-    Rectangle(int length, int width) {
+    Rectangle(int length, int width) 
+    {
         this.length = length;
         this.width = width;
     }
