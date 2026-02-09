@@ -8,3 +8,20 @@ class Student {
         this.age = age;    // 'age' on right is parameter
     }
 }
+
+
+class Rectangle {
+    int length;
+    int width;
+    
+    // Default constructor
+    Rectangle() {
+        this(10, 20);  // Calls the parameterized constructor
+    }
+    
+    // Parameterized constructor
+    Rectangle(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+}
