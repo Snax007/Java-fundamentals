@@ -1,6 +1,5 @@
 public class RLE 
 {
-    
     static String compress(String str) 
     {
         StringBuffer result = new StringBuffer();
