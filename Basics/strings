@@ -12,6 +12,12 @@ System.out.print("Enter your favorite quote: ");
 String quote = sc.nextLine(); // Now this will wait for your input!
 
 
+#Note :-
+we cannot convert string buffer to string directly 
+StringBuffer sb= new StringBuffer("karan");
+instead we use this :-
+String str=sb.toString();
+
 
 
 Method,                            Description,                                  Example
