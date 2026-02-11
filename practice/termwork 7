@@ -56,3 +56,4 @@ public class RLE
         System.out.println("Decompressed: " + decompressed);
     }
 }
+
