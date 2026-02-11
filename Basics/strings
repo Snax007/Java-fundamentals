@@ -30,7 +30,6 @@ contains(CharSequence s),          Checks if a sequence is present.,            
 
 
 
-
 // BAD WAY: Using String in a loop
 String s = "";
 for (int i = 0; i < 5; i++) {
