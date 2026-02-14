@@ -7,3 +7,7 @@ public class Player {
         playerCount++;          // Increments for every new object
     }
 }
+
+
+NOTE :-
+When i change the value of static variable , it is changed across the program 
