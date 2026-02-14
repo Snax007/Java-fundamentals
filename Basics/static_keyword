@@ -11,3 +11,5 @@ public class Player {
 
 NOTE :-
 When i change the value of static variable , it is changed across the program 
+
+Only one copy of static variable is made whereas other variables have multiple copies in correspondence with objects
