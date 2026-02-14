@@ -1,1 +1,9 @@
+public class Player {
+    String name;                // Instance variable (unique to each player)
+    static int playerCount = 0; // Static variable (shared by all players)
 
+    public Player(String name) {
+        this.name = name;
+        playerCount++;          // Increments for every new object
+    }
+}
